@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Terrarium Game</title>
+
+  <!-- LOADING BAR -->
+  <!-- This loading bar activates after the JS and CSS is included. No other setup needed. -->
+  <link rel="stylesheet" href="./loading_bar_styles.css">
+
+
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="bootstrap_dependencies/bootstrap.css">
+
+  <!-- jQuery library -->
+  <script src="bootstrap_dependencies/jquery.js"></script>
+
+
+
+  <!-- Popper JS -->
+  <script src="bootstrap_dependencies/popper.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="bootstrap_dependencies/bootstrap.min.js"></script>
+  <script src="./contextMenu/contextMenu.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="./contextMenu/contextMenu.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/png" href="image/Favicon.png">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 text-center" style="padding:0px">
+          <img id="logo" class="img-fluid" src="terrarium_logo.png" alt="" />
+          <button id="" class="btn btn-lg btn-success action-button" type="button" name="button" disabled>Food Total: <span id="food-total">0</span> </button>
+          <button id="" class="btn btn-lg btn-success action-button" type="button" name="button" disabled>Stone Total: <span id="stone-total">0</span> </button>
+          <button id="" class="btn btn-lg btn-success action-button" type="button" name="button" disabled>Wood Total: <span id="wood-total">0</span> </button>
+          <!--<button id="" class="btn btn-lg btn-success action-button" type="button" name="button" disabled>Food Production: <span id="stone-production">0</span> </button>
+          <button id="" class="btn btn-lg btn-success action-button" type="button" name="button" disabled>Food Production: <span id="wood-production">0</span> </button>
+          <button id="" class="btn btn-lg btn-success action-button" type="button" name="button" disabled>Food Production: <span id="food-production">0</span> </button>
+          <button id="claim_start" class="btn btn-lg btn-danger action-button" type="button" name="button" disabled>Claim Area</button>
+          <button id="highlight_above" class="btn btn-lg btn-primary action-button" type="button" name="button" >Highlight above</button>
+          <button id="highlight_below" class="btn btn-lg btn-secondary action-button" type="button" name="button" >Highlight below</button>
+          <button id="highlight_left" class="btn btn-lg btn-success action-button" type="button" name="button" >Highlight left</button>
+          <button id="highlight_right" class="btn btn-lg btn-secondary action-button" type="button" name="button" >Highlight right</button> -->
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container-fluid">
+    <div id="game_not_loaded_overlay"></div>
+    <div class="row">
+      <div class="col align-content-center">
+        <div id="grid"></div>
+      </div>
+
+    </div>
+  </div>
+  <!-- END OF ROW -->
+  </div>
+  <!-- END OF CONTAINER -->
+
+  <!-- SCRIPTS -->
+  <script src="loading_bar.js"></script>
+  <script src="main.js" charset="utf-8"></script>
+  <script src="cell_types.js"></script>
+  <script src="clouds.js"></script>
+</body>
+
+</html>

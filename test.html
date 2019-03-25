@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .cloud {
+            position: relative;
+            /* pointer-events: none; */
+            z-index: 5;
+
+        }
+/*
+        .cloud:hover{
+            opacity: 0.0;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <img class="cloud" src="./image/Cloud.png" alt="">
+
+    <script>
+        $(document).ready(function () {
+            console.log("Hello world!");
+            let position = 0;
+
+            $(".cloud").hover(function(){
+                $(this).fadeOut();
+                setTimeout(() => {
+                    $(this).fadeIn();
+                }, 500)
+            })
+
+            setInterval(function(){
+                console.log("updating position to " + position);
+                if(position > 300){
+                    position = 0;
+                }
+                position+=2
+                $(".cloud").css("left", `${position}px`)
+            }, 50)
+        });
+    </script>
+</body>
+
+</html>

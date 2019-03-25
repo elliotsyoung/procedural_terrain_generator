@@ -1,0 +1,283 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	/* background-color: brown; */
+}
+#game_not_loaded_overlay{
+	margin-top: -1em;
+	margin-left: -3em;
+	position: fixed;
+	z-index: 500;
+	width: 150%;
+	height: 150%;
+	background-color: black;
+}
+
+#grid {
+	margin-top: 0px;
+	width: 10000px;
+	border: solid black 2px;
+	overflow: hidden;
+}
+
+#logo {
+	margin: 0px auto;
+}
+
+.action-button {
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+.cloud {
+	position: absolute;
+	/* left: 100px; */
+	/* pointer-events: none; */
+	z-index: 85;
+	/* height: 200px; */
+	/* width: 500px */
+
+}
+
+
+.grid-box {
+	margin-top: -6px;
+	/* margin-bottom: -6px; */
+	/* margin: 0px; */
+	padding: 2px;
+	width: 40px;
+	height: 40px;
+	/* border: solid black 2px; */
+	background-color: white;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.sea-box {
+	background-image: url("image/Ocean.png");
+	background-size: cover;
+}
+
+.land-box1 {
+	background-image: url("image/Grass1.png");
+	background-size: cover;
+}
+
+.land-box2 {
+	background-image: url("image/Grass2.png");
+	background-size: cover;
+}
+
+.farm-box1 {
+	background-image: url("image/Farm1.png");
+	background-size: cover;
+}
+
+.farm-box2 {
+	background-image: url("image/Farm2.png");
+	background-size: cover;
+}
+
+.farm-box3 {
+	background-image: url("image/Farm3.png");
+	background-size: cover;
+}
+
+.mountain-box1 {
+	background-image: url("image/Mountain.png");
+	background-size: cover;
+}
+
+.mountain-box2 {
+	background-image: url("image/Mountain2.png");
+	background-size: cover;
+}
+
+.volcano-box {
+	background-image: url("image/Volcano.png");
+	background-size: cover;
+}
+
+.forest-box1 {
+	background-image: url("image/Forest.png");
+	background-size: cover;
+}
+
+.forest-box2 {
+	background-image: url("image/Forest2.png");
+	background-size: cover;
+}
+
+.forest-box3 {
+	background-image: url("image/Forest3.png");
+	background-size: cover;
+}
+
+.house-box {
+	background-image: url("image/House.gif");
+	background-size: cover;
+}
+
+.lumbermill-box {
+	background-image: url("image/Lumbermill.gif");
+	background-size: cover;
+}
+
+.mine-box {
+	background-image: url("image/Mine.gif");
+	background-size: cover;
+}
+
+.island-box {
+	background-image: url("image/Island.png");
+	background-size: cover;
+}
+
+.beachDown-box {
+	background-image: url("image/beach.png");
+	background-size: cover;
+}
+
+.beachLeft-box {
+	background-image: url("image/beach.png");
+	background-size: cover;
+	transform: rotate(90deg);
+}
+
+.beachTop-box {
+	background-image: url("image/beach.png");
+	background-size: cover;
+	transform: rotate(180deg);
+}
+
+.beachRight-box {
+	background-image: url("image/beach.png");
+	background-size: cover;
+	transform: rotate(270deg);
+}
+
+.lbeachDL-box {
+	background-image: url("image/double_beach.png");
+	background-size: cover;
+}
+
+.lbeachDR-box {
+	background-image: url("image/double_beach.png");
+	background-size: cover;
+	transform: rotate(270deg);
+}
+
+.lbeachUL-box {
+	background-image: url("image/double_beach.png");
+	background-size: cover;
+	transform: rotate(90deg);
+}
+
+.lbeachUR-box {
+	background-image: url("image/double_beach.png");
+	background-size: cover;
+	transform: rotate(180deg);
+}
+
+.riverUD-box {
+	background-image: url("image/river.png");
+	background-size: cover;
+}
+
+.riverLR-box {
+	background-image: url("image/river.png");
+	background-size: cover;
+	transform: rotate(90deg);
+}
+
+.bayDown-box {
+	background-image: url("image/bay.png");
+	background-size: cover;
+}
+
+.bayLeft-box {
+	background-image: url("image/bay.png");
+	background-size: cover;
+	transform: rotate(90deg);
+}
+
+.bayTop-box {
+	background-image: url("image/bay.png");
+	background-size: cover;
+	transform: rotate(180deg);
+}
+
+.bayRight-box {
+	background-image: url("image/bay.png");
+	background-size: cover;
+	transform: rotate(270deg);
+}
+
+.cornerBeachDL-box {
+	background-image: url("image/corner_beach.png");
+	background-size: cover;
+}
+
+.cornerBeachDR-box {
+	background-image: url("image/corner_beach.png");
+	background-size: cover;
+	transform: rotate(270deg);
+}
+
+.cornerBeachUL-box {
+	background-image: url("image/corner_beach.png");
+	background-size: cover;
+	transform: rotate(90deg);
+}
+
+.cornerBeachUR-box {
+	background-image: url("image/corner_beach.png");
+	background-size: cover;
+	transform: rotate(180deg);
+}
+
+.cornerBeachDoubleDown-box {
+	background-image: url("image/corner_beach_2.png");
+	background-size: cover;
+}
+
+.cornerBeachDoubleLeft-box {
+	background-image: url("image/corner_beach_2.png");
+	background-size: cover;
+	transform: rotate(90deg);
+}
+
+.cornerBeachDoubleUp-box {
+	background-image: url("image/corner_beach_2.png");
+	background-size: cover;
+	transform: rotate(180deg);
+}
+
+.cornerBeachDoubleRight-box {
+	background-image: url("image/corner_beach_2.png");
+	background-size: cover;
+	transform: rotate(270deg);
+}
+
+.selected {
+	border: solid black 5px;
+}
+
+.conquered-square {
+	border-color: gold;
+	background-image: url("image/Castle.png");
+	background-size: cover;
+}
+
+
+.human{
+	float: left;
+	display: inline;
+	position: relative;
+	z-index: 55;
+	width: 20px;
+	height: 20px;
+}
